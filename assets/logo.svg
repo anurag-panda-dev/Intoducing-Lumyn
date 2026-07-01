@@ -1,0 +1,39 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lumyn logo">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFB8A1" stop-opacity="1" />
+      <stop offset="45%" stop-color="#FF7A66" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#FF6A66" stop-opacity="0.9" />
+    </linearGradient>
+    <radialGradient id="watercolor" cx="30%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#FFD9D0" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#FFB3A3" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#FF836E" stop-opacity="0.82" />
+    </radialGradient>
+    <linearGradient id="waveGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2D9CFF" />
+      <stop offset="50%" stop-color="#5CD2FF" />
+      <stop offset="100%" stop-color="#1EA7E6" />
+    </linearGradient>
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feBlend in="SourceGraphic" in2="b" mode="normal"/>
+    </filter>
+  </defs>
+  <rect width="220" height="220" rx="20" fill="url(#bgGrad)" />
+  <rect width="220" height="220" rx="20" fill="url(#watercolor)" opacity="0.9" />
+
+  <!-- soft textured overlay -->
+  <g opacity="0.06">
+    <path d="M10 40c30-30 80-20 110-10s70 30 90 60v80H10V40z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- wave mark -->
+  <g transform="translate(0,18)">
+    <path d="M30 74c22-28 40-28 58-6s36 22 58 6c22-16 30-6 38 6" fill="none" stroke="url(#waveGrad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" filter="url(#softBlur)" opacity="0.98" />
+    <path d="M30 74c22-28 40-28 58-6s36 22 58 6c22-16 30-6 38 6" fill="none" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- text -->
+  <text x="50%" y="155" text-anchor="middle" font-family="Inter, system-ui, Arial" font-weight="600" font-size="42" fill="#FFFFFF">lumyn</text>
+</svg>
